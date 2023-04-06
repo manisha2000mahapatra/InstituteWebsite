@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naresh IT Technology</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css">
+    <style>
+       
+       .footer{
+        text-shadow: 1px 1px black;
+       }
+     
+
+body{
+
+background-image: url('images/bg10.jpg');
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
+}
+
+label{
+    color: white;
+}
+.register-form{
+           
+            width: 450px;
+            height:600px;
+            border: 1px solid gray;
+            box-shadow: 2px 2px 2px black;
+            padding: 10px; 
+            
+            border-radius: 15px 50px;
+        }
+        
+    </style>
+</head>
+<body class="container-fluid"> 
+    <br>
+    <div class="row">
+        
+        <div class="col-xs-12 col-sm-12 text-white">
+        <center>
+        <h2><strong>Naresh Institute and Technologies</strong></h3></center>
+        
+        </div>
+        </div>
+        <br>
+    <div class="navbar navbar-dark bg-secondary navbar-expand-lg rounded">
+        <div class="container-fluid">
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+         <!--<h2 class="navbar-brand">Amazon</h2>--> 
+         
+          <div class="navbar-collapse collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="index.html" target="frameBody" class="nav-link"><span class="bi bi-house">Home</span></a></li>
+                <li class="nav-item"><a href="contactus1.html" target="frameBody" class="nav-link"><span class="bi bi-phone">Contact Us</span></a></li>
+                <li class="nav-item"><a href="about1.html" class="nav-link"><span class="bi bi-question-circle">About</span></a></li>
+                <li class="nav-item"><a href="service1.html" class="nav-link"><span class="bi bi-question-circle">Service</span></a></li>         
+            </ul>
+           <!-- <ul class="navbar-right ms-auto text-decoration-none text-black">
+             
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="bi bi-lock-fill"></i> Sign In</a>
+                <ul class="dropdown-menu">
+                  <li><a href="login.html"><span class="fa fa-sign-in"></span> Sign In </a></li>
+                  <li><a href="register.html"><span class="fa fa-user-plus"></span> Sign Up </a></li>
+                  <li><a href="password.html"><span class="fa fa-unlock-alt"></span> Change Password </a></li>
+                </ul>
+               </li> 
+            </ul>-->
+            <div class="dropdown navbar-right ms-auto text-decoration-none text-black">
+                <button data-bs-toggle="dropdown" class="btn btn-secondary dropdown-toggle">
+                 <span class="bi bi-lock-fill"></span>Signin
+                </button>
+                <ul class="dropdown-menu dropdown-menu-white">
+                 <li class="dropdown-item"><a href="login1.html" class="text-black text-decoration-none bg-white"><span class="bi bi-lock-fill">Signin</span></a></li>
+                 <li class="dropdown-item"><a href="register1.html" class="text-black text-decoration-none bg-white"><span class="bi bi-key-fill">Signup</span></a></li>
+                 <li class="dropdown-item"><a href="password1.html" class="text-black text-decoration-none bg-white"><span class="bi bi-keyboard">change password</span></a></li>
+                 
+                </ul>
+           </div>
+                  </div>
+        </div>
+    </div>
+    <br>
+    <br>
+   
+    <div class="row">   
+        <div class="col-xs-12 col-sm-4"></div>         
+                <div class="col-xs-12 col-sm-4 form-group" id="reglogin">
+               
+          <!-- --------------Login Account----------- -->
+         
+            <div class="log">
+                <form id="frmRegister" method="post" action="#" name="RegisterForm" class="register-form">
+    
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 form-group">
+    <center>
+                    <h3 style="margin-bottom: 5px;color:white; text-shadow: 2px 2px 4px black">
+                        <center><h3><strong>Registration Form</strong></h3>
+
+                            <p id="error" style="color:red"></p>
+                            
+                            </center>
+    </center>
+                   </div>
+                </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 form-group">
+         <label>Full Name :</label>
+       <input type="text" class="form-control" id="fullname" placeholder="Full Name" name="fullname" maxlength="30" oninput="this.value = this.value.replace(/[^A-Za-z ]/g, '').replace(/(\..*)\./g, '$1');" title="Please enter characters only." required>
+       </div>
+       </div>
+ <div class="row">
+        <div class="col-xs-12 col-sm-12 form-group">
+         <label>Email :</label>
+       <input type="email" class="form-control" id="emailid" placeholder="Email Id" name="emailid" required>
+     </div> 
+ </div>
+ <div class="row">
+ 
+ <div class="col-xs-12 col-sm-12 form-group">
+           <label>Mobile :</label>
+       <input type="text" class="form-control" id="phone" placeholder="Contact Number" name="phone" required pattern="[7-9]{1}[0-9]{9}" maxlength="10" title="The contact number must enter 10 digits number and number start with 7 or 8 or 9." oninput="this.value = this.value.replace(/[^0-9]/g, '').replace(/(\..*)\./g, '$1');">
+     </div>                            
+ </div>
+ <div class="row">
+    <div class="col-xs-12 col-sm-12 form-group">
+     <label>Data :</label>
+     <input type="text" class="form-control" data-date-format="" id="dob" placeholder="Date" name="dob" required>
+     </div>
+ </div>
+ <div class="row">
+   <div class="col-xs-12 col-sm-12 form-group">
+       <label>Image :</label>
+           <input type="file" name="file" placeholder="Image" accept=".png, .jpg, .jpeg" onchange="readURL(this);" required>
+     </div>                       
+   </div>
+ <div class="row">  
+          <div class="col-xs-12 col-sm-12 form-group">
+       <label>Password :</label>
+           <input type="password" class="form-control" id="password" placeholder="Password" name="password" minlength="6" maxlength="10" required title="the password enter must above 6 and below 10 characters only.">
+         </div>               
+   </div>  
+ <div class="row">
+                  <div class="col-xs-12 col-sm-12 form-group">
+                   <label>Confirm Password :</label>
+               <input type="password" class="form-control" id="confirmpassword" placeholder="Confirm Password" name="confirmpassword" minlength="6" maxlength="10" onChange="fun1(this.value)" title="the password enter must above 6 and below 10 characters only." required>
+             </div>
+           </div>
+ <div class="row">
+         <div class="col-xs-12 col-sm-12 form-group">
+            <label>Gender :</label>
+               <input type="radio" id="gender" name="gender" value="male" required> Male
+               <input type="radio" id="gender" name="gender" value="female" required> Female
+             </div>
+           </div>
+ 
+ <div class="row">
+     <div class="col-xs-12 col-sm-12">
+          <div class="checkbox">
+           <label><input type="checkbox" id="terms" name="terms" required>I've read and Accept the 
+                 <a href="#myModal"  data-bs-toggle="modal" data-bs-target="" class="text-danger">Terms and Conditions</a></label>                       
+          </div>
+     </div>
+ </div>
+ <br>
+ <div class="row btngrp">
+    <div class="col-xs-12 col-sm-10">
+  <a href="login1.html"><button type="button" name="submit" class="btn btn-warning btn-md pull-left"><span class="bi bi-person">Sign Up</span> </button></a>   
+        <!--</div>
+<div class="col-xs-12 col-sm-10">--> 
+  <button type="submit" class="btn btn-success btn-md pull-right"><span><span class="glyphicon glyphicon-log-in"></span>&nbsp; Sign In</span></button>       
+</div>
+</div> 
+   
+     </div>   
+    </form>  
+         </div>        
+         </div>
+         <!--modal-->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog modal-md">
+        
+        <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal"  data-bs-toggle="modal" data-bs-target="#myModal">&times;</button>
+                <h4 class="modal-title text-warning text-center"><strong>Terms and Conditions</strong></h4>
+              </div>
+              <div class="modal-body">
+                         
+        <p class="bi bi-star" style="line-height: 1.4"> &nbsp; A Terms and Conditions agreement is the agreement that includes the terms, the rules and the guidelines of acceptable behavior and other useful sections to which users must agree in order to use or access your website and mobile app.</p>
+        <p class="bi bi--star" style="line-height: 1.4"> &nbsp; While most websites seem to have one, there's actually no legal requirement for defining terms and conditions. However, if you are gathering user's personal data, you are required to have a stated Privacy Policy. Terms and Conditions may not be required by law, but it's still a smart thing to include.</p>
+            
+        </div>
+                
+        
+             
+        <div class="modal-footer">
+                
+           <button type="button" id="closebtn" data-bs-dismiss="modal" class="btn btn-warning btn-md pull-right">Close</button>
+          </div>
+         </div>
+        </div> 
+        </div>
+    
+    
+    <div class="col-xs-12 col-sm-3">
+      <br><br><br><br><br>
+     <!--<center><img src="Images/log.gif" width="180" height="180"></center>--> 
+    </div>
+    
+    
+    
+    
+    </div>       
+    
+ <!--footer-->   
+    
+<div class="row" id="footer">
+
+	<div class="col-xs-12 col-sm-12">
+
+<center><strong>Naresh Technologies</strong></center>
+<br>
+<div class="footer">
+<div class="d-flex bg-secondary text-black">
+<div class="col-xs-12 col-sm-1"></div>
+<div class="col-xs-12 col-sm-3">
+
+<ul>
+ <li><a href="https://www.facebook.com/nareshit/" class="text-black text-decoration-none"target="_blank"><i class ="bi bi-facebook"></i> Facebook</a></li>
+  <li><a href="https://nareshit.in/course-schedule/" class="text-black text-decoration-none"target="_blank"><i class ="bi bi-envelope"></i> Google</a></li>
+ <li><a href="https://twitter.com/nareshitech?lang=en"class="text-black text-decoration-none" target="_blank"><i class ="bi bi-twitter"></i> Twitter</a></li>
+  <li><a href="https://www.youtube.com/user/nareshtechnologies" class="text-black text-decoration-none"target="_blank"><i class ="bi bi-youtube"></i> Youtube</a></li>
+</ul>
+
+</div>
+
+<div class="col-xs-12 col-sm-3">
+
+<ul>
+  <li><a href="index.html" class="text-black text-decoration-none">Home</a></li>
+  <li><a href="about1.html" class="text-black text-decoration-none">About</a></li>
+  <li><a href="service1.html" class="text-black text-decoration-none">Service</a></li>
+  <li><a href="contactus1.html" class="text-black text-decoration-none">Contact</a></li>
+</ul>
+
+</div>
+
+<div class="col-xs-12 col-sm-5">
+
+<ul class="text-black">
+  <li>Name : Naresh Istitute</li>
+  <li>Email : info@nareshit.com</li>
+  <li>Contact : +91-xxxxxxxxxx</li>
+  <li>Address : Sr nagar, Hyderabad, Telangana, India </li>
+</ul>
+
+</div>
+
+</div>
+						
+</div>
+</div>
+</div>
+<!-- Footer End -->
+
+
+
+</div>
+</div> 
+</div>
+                
+  <!--<iframe width="100%" style="border:none;height:500px;" name="frameBody"></iframe>--> 
+   <script src="../../node_modules/jquery/dist/jquery.js"></script>
+   <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
